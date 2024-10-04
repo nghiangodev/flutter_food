@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_food/views/home/layout/footer_page.dart';
 import 'package:flutter_food/views/home/layout/header_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -9,6 +10,7 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Text('This is the content of SomePage.'),
       ),
+      bottomNavigationBar: FooterPage(),
     );
   }
 }
