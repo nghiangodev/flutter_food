@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_food/utils/color_constant.dart';
 import 'package:flutter_food/views/home/home_page.dart';
 
 class BannerPage extends StatelessWidget {
@@ -40,7 +41,7 @@ class BannerPage extends StatelessWidget {
                 );
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color(0xFFB27436),
+                backgroundColor: ColorConstants.primary,
               ),
               child: Text(
                 'Start',
