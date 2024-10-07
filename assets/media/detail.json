@@ -1,0 +1,299 @@
+{
+    "data": {
+        "id": 1,
+        "created_at": "2020-01-07T00:33:03.000000Z",
+        "updated_at": "2020-01-07T00:33:03.000000Z",
+        "deleted_at": null,
+        "name": "Bắp bò rim",
+        "level": "Trung bình",
+        "thumb_img": "cooky-recipe-637132996306408011.jpeg",
+        "img": "cooky-recipe-637132996306408011.jpeg",
+        "total_time": "1h30p",
+        "meta_img": "cooky-recipe-637132996306408011.jpeg",
+        "author": "admin",
+        "slug": "bap-bo-rim",
+        "serving": 5,
+        "like_count": 0,
+        "foods": [
+            {
+                "id": 2,
+                "created_at": "2019-08-12T00:15:35.000000Z",
+                "updated_at": "2019-08-12T00:15:35.000000Z",
+                "deleted_at": null,
+                "name": "Bò",
+                "pivot": {
+                    "food_id": 1,
+                    "dish_id": 2
+                }
+            },
+            {
+                "id": 3,
+                "created_at": "2019-08-12T00:15:44.000000Z",
+                "updated_at": "2019-08-12T00:15:44.000000Z",
+                "deleted_at": null,
+                "name": "Gà",
+                "pivot": {
+                    "food_id": 1,
+                    "dish_id": 3
+                }
+            },
+            {
+                "id": 4,
+                "created_at": "2019-08-12T00:15:54.000000Z",
+                "updated_at": "2019-08-12T00:15:54.000000Z",
+                "deleted_at": null,
+                "name": "Cá",
+                "pivot": {
+                    "food_id": 1,
+                    "dish_id": 4
+                }
+            },
+            {
+                "id": 4,
+                "created_at": "2019-08-12T00:15:54.000000Z",
+                "updated_at": "2019-08-12T00:15:54.000000Z",
+                "deleted_at": null,
+                "name": "Cá",
+                "pivot": {
+                    "food_id": 1,
+                    "dish_id": 4
+                }
+            },
+            {
+                "id": 5,
+                "created_at": "2019-08-12T00:16:03.000000Z",
+                "updated_at": "2019-08-12T00:16:03.000000Z",
+                "deleted_at": null,
+                "name": "Tôm",
+                "pivot": {
+                    "food_id": 1,
+                    "dish_id": 5
+                }
+            },
+            {
+                "id": 5,
+                "created_at": "2019-08-12T00:16:03.000000Z",
+                "updated_at": "2019-08-12T00:16:03.000000Z",
+                "deleted_at": null,
+                "name": "Tôm",
+                "pivot": {
+                    "food_id": 1,
+                    "dish_id": 5
+                }
+            }
+        ],
+        "categories": [
+            {
+                "id": 3,
+                "created_at": "2023-07-06T02:44:39.000000Z",
+                "updated_at": "2023-07-06T02:51:26.000000Z",
+                "deleted_at": null,
+                "name": "Món chính",
+                "parent_id": null,
+                "pivot": {
+                    "dish_id": 1,
+                    "category_id": 3
+                }
+            }
+        ],
+        "ingredients": [
+            {
+                "id": 1,
+                "created_at": "2020-01-07T00:33:04.000000Z",
+                "updated_at": "2020-01-07T00:33:04.000000Z",
+                "deleted_at": null,
+                "dish_id": 1,
+                "name": "Bắp bò",
+                "unit": "Gr",
+                "quantity": 600
+            },
+            {
+                "id": 2,
+                "created_at": "2020-01-07T00:33:04.000000Z",
+                "updated_at": "2020-01-07T00:33:04.000000Z",
+                "deleted_at": null,
+                "dish_id": 1,
+                "name": "Nước mắm",
+                "unit": "ml",
+                "quantity": 80
+            },
+            {
+                "id": 3,
+                "created_at": "2020-01-07T00:33:04.000000Z",
+                "updated_at": "2020-01-07T00:33:04.000000Z",
+                "deleted_at": null,
+                "dish_id": 1,
+                "name": "Mật ong",
+                "unit": "ml",
+                "quantity": 80
+            },
+            {
+                "id": 4,
+                "created_at": "2020-01-07T00:33:05.000000Z",
+                "updated_at": "2020-01-07T00:33:05.000000Z",
+                "deleted_at": null,
+                "dish_id": 1,
+                "name": "Gừng",
+                "unit": "Củ",
+                "quantity": 1
+            },
+            {
+                "id": 5,
+                "created_at": "2020-01-07T00:33:05.000000Z",
+                "updated_at": "2020-01-07T00:33:05.000000Z",
+                "deleted_at": null,
+                "dish_id": 1,
+                "name": "Hành tím",
+                "unit": "Củ",
+                "quantity": 5
+            },
+            {
+                "id": 6,
+                "created_at": "2020-01-07T00:33:05.000000Z",
+                "updated_at": "2020-01-07T00:33:05.000000Z",
+                "deleted_at": null,
+                "dish_id": 1,
+                "name": "Tỏi",
+                "unit": "Củ",
+                "quantity": 1
+            },
+            {
+                "id": 7,
+                "created_at": "2020-01-07T00:33:06.000000Z",
+                "updated_at": "2020-01-07T00:33:06.000000Z",
+                "deleted_at": null,
+                "dish_id": 1,
+                "name": "Hoa hồi",
+                "unit": "C&#225;i",
+                "quantity": 2
+            },
+            {
+                "id": 8,
+                "created_at": "2020-01-07T00:33:06.000000Z",
+                "updated_at": "2020-01-07T00:33:06.000000Z",
+                "deleted_at": null,
+                "dish_id": 1,
+                "name": "Thanh quế",
+                "unit": "Miếng",
+                "quantity": 2
+            }
+        ],
+        "steps": [
+            {
+                "id": 1,
+                "created_at": "2020-01-07T00:33:06.000000Z",
+                "updated_at": "2020-01-07T00:33:06.000000Z",
+                "deleted_at": null,
+                "dish_id": 1,
+                "description": "Bắp bò sơ chế sạch rồi trụng qua nồi nước sôi, xong lấy ra rửa lại cho sạch bọt bẩn, sau đó cắt bắp bò làm hai.",
+                "order": 0,
+                "images": [
+                    {
+                        "id": 1,
+                        "created_at": "2020-01-07T00:33:07.000000Z",
+                        "updated_at": "2020-01-07T00:33:07.000000Z",
+                        "deleted_at": null,
+                        "step_id": 1,
+                        "img": "cooky-recipe-637133000537152401.jpeg"
+                    },
+                    {
+                        "id": 2,
+                        "created_at": "2020-01-07T00:33:07.000000Z",
+                        "updated_at": "2020-01-07T00:33:07.000000Z",
+                        "deleted_at": null,
+                        "step_id": 1,
+                        "img": "cooky-recipe-637133000538246155.jpeg"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "created_at": "2020-01-07T00:33:08.000000Z",
+                "updated_at": "2020-01-07T00:33:08.000000Z",
+                "deleted_at": null,
+                "dish_id": 1,
+                "description": "Cho bắp bò + nước mắm + mật ong + hành tỏi &amp; gừng đã băm nhỏ + hoa hồi, quế đã rang thơm vào nồi trộn đều rồi đậy nắp lại, sau đó cho vào ngăn mát tủ lạnh ướp qua đêm.",
+                "order": 1,
+                "images": [
+                    {
+                        "id": 3,
+                        "created_at": "2020-01-07T00:33:09.000000Z",
+                        "updated_at": "2020-01-07T00:33:09.000000Z",
+                        "deleted_at": null,
+                        "step_id": 2,
+                        "img": "cooky-recipe-637133004095745136.jpeg"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "created_at": "2020-01-07T00:33:10.000000Z",
+                "updated_at": "2020-01-07T00:33:10.000000Z",
+                "deleted_at": null,
+                "dish_id": 1,
+                "description": "Ngày hôm sau cho nồi bò đã ướp lên bếp rim với lửa nhỏ nhất (không thêm nước vì nước bò sẽ chảy ra nhiều), cứ rim như vậy khoảng 1 tiếng thì nước trong nồi sẽ cạn nhưng vẫn còn ít nước thì tắt bếp.",
+                "order": 2,
+                "images": [
+                    {
+                        "id": 4,
+                        "created_at": "2020-01-07T00:33:11.000000Z",
+                        "updated_at": "2020-01-07T00:33:11.000000Z",
+                        "deleted_at": null,
+                        "step_id": 3,
+                        "img": "cooky-recipe-637133006197258877.jpeg"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "created_at": "2020-01-07T00:33:11.000000Z",
+                "updated_at": "2020-01-07T00:33:11.000000Z",
+                "deleted_at": null,
+                "dish_id": 1,
+                "description": "Lấy bắp bò ra để nguội một chút, rồi dùng dao cắt mỏng, khi ăn thì chấm với nước xốt còn lại trong nồi.",
+                "order": 3,
+                "images": [
+                    {
+                        "id": 5,
+                        "created_at": "2020-01-07T00:33:12.000000Z",
+                        "updated_at": "2020-01-07T00:33:12.000000Z",
+                        "deleted_at": null,
+                        "step_id": 4,
+                        "img": "cooky-recipe-637133008475712714.jpeg"
+                    },
+                    {
+                        "id": 6,
+                        "created_at": "2020-01-07T00:33:12.000000Z",
+                        "updated_at": "2020-01-07T00:33:12.000000Z",
+                        "deleted_at": null,
+                        "step_id": 4,
+                        "img": "cooky-recipe-637133008476025152.jpeg"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "created_at": "2020-01-07T00:33:13.000000Z",
+                "updated_at": "2020-01-07T00:33:13.000000Z",
+                "deleted_at": null,
+                "dish_id": 1,
+                "description": "Bắp bò mềm, thấm gia vị, gân giòn sần sật rất ngon.",
+                "order": 4,
+                "images": [
+                    {
+                        "id": 7,
+                        "created_at": "2020-01-07T00:33:13.000000Z",
+                        "updated_at": "2020-01-07T00:33:13.000000Z",
+                        "deleted_at": null,
+                        "step_id": 5,
+                        "img": "cooky-recipe-637133011990016906.jpeg"
+                    }
+                ]
+            }
+        ]
+    },
+    "executeDate": "2024-10-07 09:15:26",
+    "statusCode": 200,
+    "message": "Success",
+    "success": true
+}

@@ -1,5 +1,8 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart'; // Dùng để đọc file JSON từ assets
 import 'package:flutter_food/utils/color_constant.dart';
+import 'package:flutter_food/models/detail.dart';
 
 class FoodDetailPage extends StatefulWidget {
   @override
@@ -7,7 +10,8 @@ class FoodDetailPage extends StatefulWidget {
 }
 
 class _FoodDetailPageState extends State<FoodDetailPage> {
-  int _selectedTabIndex = 0; // Initially select the first tab
+  int _selectedTabIndex = 0;
+  Dish? _dish; // Biến lưu trữ dữ liệu món ăn
 
   final List<String> _tabTitles = [
     'Overview',
@@ -15,6 +19,22 @@ class _FoodDetailPageState extends State<FoodDetailPage> {
     'Instructions',
     'Reviews',
   ];
+
+  @override
+  void initState() {
+    super.initState();
+    _loadDishData(); // Tải dữ liệu món ăn
+  }
+
+  Future<void> _loadDishData() async {
+    final String response = await rootBundle.loadString(
+        'assets/media/detail.json'); // Đường dẫn tới file JSON của bạn
+    final data = json.decode(response);
+    setState(() {
+      _dish = Dish.fromJson(
+          data['data']); // Chuyển đổi dữ liệu JSON thành đối tượng Dish
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +51,6 @@ class _FoodDetailPageState extends State<FoodDetailPage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Image and difficulty level
           Stack(
             alignment: Alignment.topRight,
             children: [
@@ -43,7 +62,6 @@ class _FoodDetailPageState extends State<FoodDetailPage> {
               ),
             ],
           ),
-          // Avatar and food info
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Row(
@@ -51,7 +69,6 @@ class _FoodDetailPageState extends State<FoodDetailPage> {
                 CircleAvatar(
                   radius: 30,
                   backgroundImage: AssetImage('assets/images/icon/user.png'),
-                  // Replace with your avatar image
                 ),
                 SizedBox(width: 16),
                 Column(
@@ -72,7 +89,6 @@ class _FoodDetailPageState extends State<FoodDetailPage> {
               ],
             ),
           ),
-          // Horizontal navigation bar
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: List.generate(
@@ -109,7 +125,6 @@ class _FoodDetailPageState extends State<FoodDetailPage> {
               ),
             ),
           ),
-          // Content sections (replace with your actual content)
           Expanded(
             child: SingleChildScrollView(
               child: Padding(
@@ -124,7 +139,6 @@ class _FoodDetailPageState extends State<FoodDetailPage> {
   }
 
   Widget _buildContentSection(int tabIndex) {
-    // Replace with your content for each section
     switch (tabIndex) {
       case 0:
         return Text('Overview content');
